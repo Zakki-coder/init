@@ -1,0 +1,12 @@
+#lo0 = loopback, localhost
+#gif0 = Software Network Interface
+#stf0 = IPV6toIPV4 tunnel interface
+#XHC20 and XHC0 are USB network interfaces
+#en0 = Ethernet, en1 = Wi-fi, en2 = Ethernet, en3 = Ethernet. I used command ifconfig -v en*, to get more verbose info. 
+#bridge0 = Thunderbolt bridge. typically for transfering files over cable between two Macs.
+#awdl0 is the Apple Wireless Direct Link, typically used for Hotspot functionality with iOS devices and your Apple computer. AirDrop, Airplay, etc. Also used for Bluetooth.
+#ap1: Access Point. This is used if you are using your MacBook as a wireless host where you are sharing its connection.
+#p2p0 = airdrop. "Peer to peer"
+#utun0 = related to the sharing of information between devices on the same iCloud account. They can also be created by any VPN interfaces you’ve added.
+
+ifconfig -l
