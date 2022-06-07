@@ -8,5 +8,6 @@
 #ap1: Access Point. This is used if you are using your MacBook as a wireless host where you are sharing its connection.
 #p2p0 = airdrop. "Peer to peer"
 #utun0 = related to the sharing of information between devices on the same iCloud account. They can also be created by any VPN interfaces you’ve added.
+#Network interfaces are interfaces for hardware or software 
 
 ifconfig -l

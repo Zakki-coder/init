@@ -1,1 +1,6 @@
+#Broadcast address allows the sending of information to all machines of subnet, rather than just for one host
 #ifconfig -v en0 and grep? What is inet???
+#ARP = Address resolution protocol. When we are only using L2, like with switches. We are going to need ARP because L2 only understands MAC addresses and not IP's With ARP we ask from every device of network their IP and get the correct MAC in return. ARP uses broadcast to achieve its goal. Arp command shows whats in arp cache.
+#Instead of ARP we could ping the broadcast address
+A) ifconfig en0 | grep "broadcast" | awk '{ print $6 }'
+B) arp -a | awk '{ print $2 }' | sed s/'('/''/g | sed s/')'/''/g 
