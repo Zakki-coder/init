@@ -1,0 +1,3 @@
+#With just one argument i.e 'nslookup who.int' Upper field gives this machines dns on the upper fields and who's domani on the lower field. With two arguments i.e 'nslookup who.int 8.8.8.8' Upper field changes to googles(8.8.8.8) DNS.
+
+nslookup who.int 8.8.8.8

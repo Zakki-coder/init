@@ -1,0 +1,2 @@
+#First get the ip of who.int(with 'nslookup who.int' for example), then pass it to whois.
+whois 104.17.113.188 | grep "OrgName" | awk '{print $2,$3}'

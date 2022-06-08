@@ -1,0 +1,4 @@
+#DNS = domain name system
+ping who.int -c 2 | sed -n 2p | awk '{ print $4 }' | sed 's/:$//'
+#OR use dig = DNS lookup utility
+dig +short who.int

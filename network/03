@@ -1,0 +1,4 @@
+#ifconfig -v en1 shows that it is the wifi interface
+#Another option:
+#networksetup -getmacaddress en1
+ifconfig en1 | grep ether | awk '{ print $2 }'

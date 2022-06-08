@@ -1,0 +1,1 @@
+Go to terminal and give the command "man dig". Then go to bottom and under FILES header you will find the path: '/etc/resolv.conf'. Read the content with this command: 'cat /etc/resolv.conf'
