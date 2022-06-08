@@ -1,5 +1,5 @@
 #Another option:
 #route -n get default
 #r flag = show routes, n flag = dont resolve IP to hostname
-#default gateway is the router(forwarding host) and it is used when destination IP cant be found on subnetwork. Then we ask the router to ask destination IP from other connected networks
+#default gateway is the router(forwarding host) and it is used when destination IP cant be found on subnetwork. Then we ask the router to ask if destination IP exist from other connected networks
 netstat -rn | grep "default" | awk '{ print $2 }' | sed -n 1p

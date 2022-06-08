@@ -1,0 +1,3 @@
+I googled about local dns table and found where the host file can be found. Then I googled some more to make sure that it should be what is asked.
+
+cat /etc/hosts

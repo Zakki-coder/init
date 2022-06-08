@@ -1,1 +1,3 @@
 #10. Identify the network devices between your computer and the who.int domain
+#Traceroute works by starting from ttl(time to live) = 1 and then sending packets to destination. Ttl defines the amount of hops that a packet makes before reaching a hop which sends a reply. Hop is a journey from computer to computer(Or router to router??). So the difference between ping and traceroute is that ping gets round-trip time only from destination point and traceroute also gets the round-trip time from every successive node on the way.
+traceroute who.int

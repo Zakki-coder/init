@@ -1,0 +1,3 @@
+It seems that i should edit /etc/hosts or maybe /etc/resolv.conf, but both of them require admin rights.
+This command should do the trick:
+cat "46.19.122.85 intra.42.fr" >> /etc/hosts
