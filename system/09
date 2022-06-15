@@ -1,0 +1,4 @@
+#9. What command lets you know who is connected to the System?
+users
+who -a
+w

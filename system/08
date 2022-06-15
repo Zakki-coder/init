@@ -1,0 +1,2 @@
+#8. What file contains the RSA keys of systems that are authorized to connect via SSH?
+Write man ssh, scroll down to authentication part. Under the AUTHENTICATION header you will find that it is the ~/.ssh/authorized_keys file where permitted public keys are located.

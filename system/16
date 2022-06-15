@@ -1,0 +1,3 @@
+#16. Find the service which makes it possible to run specific tasks following a regular schedule
+
+I googled service scheduler and found out that the service to be used for schduling is: cron.

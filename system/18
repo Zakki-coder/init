@@ -1,0 +1,3 @@
+sudo service ssh status
+or
+sudo systemctl stop sshd

@@ -1,0 +1,6 @@
+#19. List all services which are started at boot time and name this kind of services
+
+Services are also called daemons.
+systemctl list-units --type service --all
+
+#init(system initialization process) starts spawning daemons through forking method after boot is complete.

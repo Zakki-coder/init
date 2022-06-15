@@ -1,0 +1,4 @@
+I googled debian version and found out about os-release file in /etc/ folder
+
+#cat /etc/os-release | grep "PRETTY_NAME" | sed 's/PRETTY_NAME="'//g | sed 's/"$//'
+#cat /etc/issue

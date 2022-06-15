@@ -1,0 +1,9 @@
+#23. Explain how connect yourself as new user. (With graphic session and ssh session)
+
+A)
+sudo vi /etc/ssh/sshd_config
+->X11Forwarding yes
+Mac needs to have XQuartz installed
+on guest terminal type: ssh -X -p 4242 <user>@127.0.0.1
+B)
+ssh -p 4242 <user>@127.0.0.1
