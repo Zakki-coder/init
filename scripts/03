@@ -1,0 +1,13 @@
+#!/bin/bash
+
+read -p "Enter username: " username
+read -s -p "Enter password: " password
+does_it_exist=$(awk -F: '{print $1}' /etc/passwd | grep "\b$username\b")
+if [ $does_it_exist ]; then
+	printf "\nUsername already exist\n"
+	exit 1
+else
+	sudo useradd -m -p "$password" "$username"	
+	printf "\nUser added\n"
+fi
+	

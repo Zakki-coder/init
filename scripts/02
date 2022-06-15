@@ -1,0 +1,15 @@
+#!/bin/bash
+
+#-r flag forces userdel to remove users home and mail
+USR_DONT_DEL=$(w | grep "tty" | awk 'NR=2{print $1}')
+USR=$(w | grep -v "tty" | awk 'NR>2{print $1}')
+for val in $USR; do
+	if [[ $val != $USR_DONT_DEL ]]; then
+		killall -KILL -u $val
+	fi
+done
+for val in $USR; do
+	if [[ $val != $USR_DONT_DEL ]]; then
+		userdel -r $val
+	fi
+done
