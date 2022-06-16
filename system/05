@@ -1,2 +1,2 @@
 #5. Name the command that determines the state of the SSH service.
-systemctl status ssh | grep "Active"
+systemctl status ssh | grep "Active" | sed 's/^[ \t]*//'

@@ -1,4 +1,6 @@
 #9. What command lets you know who is connected to the System?
 users
-who -a
-w
+#or
+who -a | awk 'NR>2{print $1}'
+#or
+w | awk 'NR>2{print $1}'

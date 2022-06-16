@@ -1,2 +1,3 @@
-hostnamectl set-hostname new_hostname
-#Maybe you also need to change /etc/hosts file
+#Check the hostname with hostnamectl or cat /etc/hostname
+sudo hostnamectl set-hostname new_hostname
+#If you want changes to have effect after reboot change /etc/hosts file also

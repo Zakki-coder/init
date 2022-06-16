@@ -1,2 +1,3 @@
 #14. Run the ‘tail -f /var/log/syslog‘ command in background
+#jobs will show backround processes, with bg restart background job, with fg bring it to foreground.
 sudo tail -f /var/log/syslog &
