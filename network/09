@@ -1,4 +1,4 @@
 #Find the external IP of 42.fr
 dig +short 42.fr
 
-#You could also use the good old nslookup
+#You could also use the good old nslookup or ping
