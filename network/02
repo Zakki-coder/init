@@ -4,7 +4,7 @@
 #Instead of ARP we could ping the broadcast address
 A) ifconfig en0 | grep "broadcast" | awk '{ print $6 }'
 B) 
-	#First we must ping to update the Address list
+	#First we must ping broadcast to update the Address list
 	ifconfig en0 | grep "broadcast" | awk '{ print $6 }' | xargs ping -c 1 > /dev/null
 	#Then we can call arp
 	arp -a | awk '{ print $2 }' | sed s/'('/''/g | sed s/')'/''/g 
