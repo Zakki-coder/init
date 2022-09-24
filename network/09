@@ -1,4 +1,4 @@
-#Find the external IP of 42.fr
-dig +short 42.fr
+#Find the external IP of 42.fr, dig +short 42.fr
+163.172.250.16
 
 #You could also use the good old nslookup or ping
