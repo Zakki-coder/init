@@ -1,3 +1,4 @@
 #Find the IP that was assigned to you by dhcp server
 ifconfig en0 | grep broadcast | awk '{ print $2 }' #for ethernet
 ifconfig en1 | grep broadcast | awk '{ print $2 }' #for wifi
+#You could also use ```system_profiler SPNetworkLocationDataType``` at least on mac.
